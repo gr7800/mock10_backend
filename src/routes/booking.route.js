@@ -3,8 +3,8 @@ const { GetBookingDetail, BookFlight} = require("../controller/booking.controlle
 
 const router = express.Router();
 
-router.route("/booking").get(GetBookingDetail);
-router.route("/dashboard").post(BookFlight);
+router.route("/dashboard").get(GetBookingDetail);
+router.route("/booking").post(BookFlight);
 
 
 module.exports=router;
